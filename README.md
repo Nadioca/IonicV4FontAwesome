@@ -9,14 +9,19 @@ $ npm i @fortawesome/angular-fontawesome
 $ npm i --save @fortawesome/fontawesome-svg-core
 
 $ npm i --save @fortawesome/free-solid-svg-icons
+$ npm i --save @fortawesome/free-regular-svg-icons
+$ npm i --save @fortawesome/free-brands-svg-icons
 
 ##Integran en app.module.ts
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faCoffee);
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fas, far, fab);
 
 y en imports añadir => FontAwesomeModule
 
@@ -29,9 +34,6 @@ y en imports añadir => FontAwesomeModule
 ##integrar en home.page.ts
 
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
-y en la clase =>   faCoffee = faCoffee;
-
 
 ##Uso en home.page.html
 
